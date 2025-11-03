@@ -27,22 +27,55 @@
        alt="Serenity Comp Bio graphic" 
        style="width:70%;height:auto;margin-top:1rem">
   <h3><span style="color:#5B7345">Services Offered</span></h3>
-  <div  style="text-align: left;color:#56344B">
-  <ul>
-  <li>Data Architecture & Cloud Solutions: Designs and implements scalable cloud, serverless, and on-premises data systems tailored for biotech and pharmaceutical industries. Deep
-expertise in AWS services such as EC2, Lambda, S3, batch and more.</li>
-<li>Computational Biology & Bioinformatics: Provides advanced NGS data analysis, including
-RNA-seq, gene prediction, variant analysis, and genome assembly. Develops custom pipelines
-to streamline research and data management workflows.</li>
-<li>Machine Learning & Statistical Modeling: With a focus on genotype-phenotype modeling, and target discovery, utilizes statistical methods and machine learning models, such as logistic regression, PCA, and XGBoost, NLP, to derive actionable insights from complex biological datasets.</li>
-<li>Strategic R&amp;D Leadership: Leads computational strategies for drug discovery and
-development. Experience in managing cross-functional teams and mentoring scientists in data science applications.</li>
-<li>Custom Software Development: Builds bespoke applications and tools for data collection, visualization, and analysis to support research and development processes, enhancing eﬃciency and data integrity.</li>
-<li>IT and Infrastructure Management: Oversees IT operations, including cybersecurity, vendor management, and infrastructure optimization across cloud and on-premises environments. Proven track record in reducing turnaround time for data analysis.</li>
-<li>Educational &amp; Training: Conducts specialized training sessions in programming,
-  bioinformatics, and data science for research professionals, fostering skill development and knowledge sharing.</li>
-  </ul>
+ <div style="--c:#56344B;--wText:60%;--wImg:40%;font-family:system-ui,Segoe UI,Arial,sans-serif;color:var(--c);">
+  <style>
+    .row{display:flex;align-items:stretch;gap:20px;margin:18px 0;}
+    .row.reverse{flex-direction:row-reverse;}
+    .text{flex:0 0 var(--wText);}
+    .img{flex:0 0 var(--wImg);display:flex;align-items:center;justify-content:center;border:2px dashed var(--c);border-radius:10px;min-height:140px}
+    .img span{opacity:.6}
+    ul{margin:0;padding-left:20px}
+    li{margin:.35em 0}
+    @media (max-width:800px){
+      .row,.row.reverse{flex-direction:column}
+      .text,.img{flex-basis:auto}
+    }
+  </style>
+
+  <!-- Row 1: text left, image right -->
+  <div class="row">
+    <div class="text">
+      <ul>
+        <li><strong>Data Architecture & Cloud:</strong> Scalable cloud/serverless/on-prem systems for biotech & pharma; deep AWS (EC2, Lambda, S3, Batch...).</li>
+        <li><strong>Computational Biology:</strong> NGS analysis (RNA-seq, variant calling, assembly) with custom pipelines for reproducible workflows.</li>
+        <li><strong>ML & Stats:</strong> Genotype-phenotype modeling; logistic regression, PCA, XGBoost, NLP to extract actionable insights.</li>
+      </ul>
+    </div>
+    <div class="img" aria-hidden="true"><span>Image Placeholder (40%)</span></div>
   </div>
+
+  <!-- Row 2: text right, image left -->
+  <div class="row reverse">
+    <div class="text">
+      <ul>
+        <li><strong>Strategic R&amp;D Leadership:</strong> Guides computational strategy across discovery; mentors cross-functional teams.</li>
+        <li><strong>Custom Software:</strong> Bespoke tools for collection, viz, and analysis to boost efficiency and data integrity.</li>
+      </ul>
+    </div>
+    <div class="img" aria-hidden="true"><span>Image Placeholder (40%)</span></div>
+  </div>
+
+  <!-- Row 3: text left, image right -->
+  <div class="row">
+    <div class="text">
+      <ul>
+        <li><strong>IT & Infrastructure:</strong> Cybersecurity, vendor mgmt, cloud/on-prem optimization; cuts analysis turnaround time.</li>
+        <li><strong>Education & Training:</strong> Targeted workshops in programming, bioinformatics, and data science for researchers.</li>
+      </ul>
+    </div>
+    <div class="img" aria-hidden="true"><span>Image Placeholder (40%)</span></div>
+  </div>
+</div>
   <br>
      <a href="mailto:info@serenitycompbio.com"
      style="display:inline-block;
