@@ -34,6 +34,13 @@
     .text{flex:0 0 var(--wText);}
     .img{flex:0 0 var(--wImg);display:flex;align-items:center;justify-content:center;border:2px dashed var(--c);border-radius:10px;min-height:140px}
     .img span{opacity:.6}
+    .img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
     ul{margin:0;padding-left:20px}
     li{margin:.35em 0}
     @media (max-width:800px){
